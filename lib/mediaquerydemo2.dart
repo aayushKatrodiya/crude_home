@@ -10,15 +10,15 @@ class MediaQueryDemo2 extends StatefulWidget {
 class _MediaQueryDemo2State extends State<MediaQueryDemo2> {
   @override
   Widget build(BuildContext context) {
-    var _mediaQuery = MediaQuery.of(context);
+    var mediaQuery = MediaQuery.of(context);
     return Scaffold(
       body: Center(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Container(
-              width: _mediaQuery.size.width * 0.5,
-              height: _mediaQuery.size.height * 0.5,
+              width: mediaQuery.size.width * 0.5,
+              height: mediaQuery.size.height * 0.5,
               color: Colors.purple,
               child: const Icon(
                 Icons.ac_unit,
@@ -29,8 +29,8 @@ class _MediaQueryDemo2State extends State<MediaQueryDemo2> {
               ),
             ),
             Container(
-              width: _mediaQuery.size.width * 0.4,
-              height: _mediaQuery.size.width * 0.4,
+              width: mediaQuery.size.width * 0.4,
+              height: mediaQuery.size.width * 0.4,
               color: Colors.yellow,
             )
           ],
